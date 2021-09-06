@@ -1,0 +1,26 @@
+Circuit: * C:\Users\Edison-MSI\Documents\My Files\UNSAAC\21-1\Laboratorio de Circuitos Electrónicos I\Experiencia 3\rectificador1.asc
+
+.OP point found by inspection.
+
+vmax: MAX(v(i))=16.2565 FROM 0 TO 0.06
+vmin: MIN(v(i))=0 FROM 0 TO 0.06
+vrpp: vmax - vmin=16.2565
+
+
+Date: Mon Sep 06 01:01:22 2021
+Total elapsed time: 0.058 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2385
+traniter = 2385
+tranpoints = 1132
+accept = 1102
+rejected = 30
+matrix size = 4
+fillins = 0
+solver = Normal
+Matrix Compiler1: 100 bytes object code size  0.0/0.0/[0.0]
+Matrix Compiler2: off  [0.0]/0.0/0.0
+

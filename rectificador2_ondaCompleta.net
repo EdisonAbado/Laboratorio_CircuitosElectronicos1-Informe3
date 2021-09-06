@@ -1,0 +1,23 @@
+* C:\Users\Edison-MSI\Documents\My Files\UNSAAC\21-1\Laboratorio de Circuitos Electrónicos I\Experiencia 3\rectificador2_ondaCompleta.asc
+D1 N002 N001 D1n4004rl
+V1 N002 N003 SINE(0 {A} {f})
+C1 I 0 {C}
+R1 I 0 1k
+D2 N003 N001 D1n4004rl
+D3 0 N002 D1n4004rl
+D4 0 N003 D1n4004rl
+L1 N001 I 442m
+C2 N001 0 {C}
+.model D D
+.lib C:\Users\Edison-MSI\Documents\LTspiceXVII\lib\cmp\standard.dio
+.inc 1N4004RL.lib
+.param A=12*sqrt(2)
+.param f=60
+;step param C 60u 80u 2u
+.meas Vmax MAX V(I)
+.meas Vmin MIN V(I)
+.meas Vrpp param Vmax - Vmin
+.tran 0 500m 0m
+.param C=70u
+.backanno
+.end
